@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  
+  body {
+    @apply font-sans leading-relaxed overflow-x-hidden bg-white;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background: linear-gradient(135deg, #ff7f00 0%, #ff9500 100%);
+    @apply text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .btn-secondary {
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+    @apply text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .btn-outline {
+    @apply border-2 bg-transparent font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    border-color: #ff7f00;
+    color: #ff7f00;
+    background-color: white;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl p-6 shadow-xl backdrop-blur-sm;
+  }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    @apply rounded-2xl;
+  }
+}
+
+@layer utilities {
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out;
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

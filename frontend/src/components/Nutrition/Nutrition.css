@@ -1,0 +1,237 @@
+.nutrition-section {
+  padding: 6rem 0;
+  background-color: #f8fafc;
+}
+
+.nutrition-content {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.nutrition-text {
+  flex: 1;
+}
+
+.nutrition-text h2 {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #FF6B35 0%, #FF8E53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.nutrition-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.feature-item h3 {
+  font-size: 1.125rem;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.feature-item p {
+  font-size: 0.9375rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.nutrition-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 420px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  color: #1a202c;
+  margin: 0;
+  font-weight: 700;
+}
+
+.token-badge {
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nutrition-progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress-item {
+  margin-bottom: 1.5rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.progress-label {
+  font-size: 0.875rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.progress-value {
+  font-size: 0.8125rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.nutrition-feedback {
+  background: #f0fdf4;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border: 1px solid #bbf7d0;
+}
+
+.feedback-icon {
+  color: #22c55e;
+  font-size: 1.25rem;
+  margin-top: 0.125rem;
+}
+
+.feedback-text {
+  flex: 1;
+}
+
+.feedback-message {
+  font-size: 0.9375rem;
+  color: #166534;
+  font-weight: 500;
+  margin: 0 0 0.25rem 0;
+}
+
+.feedback-subtext {
+  font-size: 0.8125rem;
+  color: #15803d;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .nutrition-content {
+    gap: 3rem;
+  }
+  
+  .nutrition-text h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nutrition-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .nutrition-content {
+    flex-direction: column;
+  }
+  
+  .nutrition-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nutrition-section {
+    padding: 4rem 0;
+  }
+  
+  .nutrition-text h2 {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .nutrition-features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .nutrition-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .nutrition-text h2 {
+    font-size: 1.75rem;
+  }
+  
+  .card-header h3 {
+    font-size: 1.125rem;
+  }
+  
+  .nutrition-card {
+    padding: 1.5rem;
+  }
+}
